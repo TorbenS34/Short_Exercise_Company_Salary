@@ -8,5 +8,4 @@ public class Worker{
         this.WorkerSalary = WorkerSalary;
         this.WorkerComplement = WorkerComplement;
     }
-
 }

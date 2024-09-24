@@ -28,5 +28,6 @@ public class Main {
             totalSalary = totalSalary + Workerlist[i].WorkerSalary;
         }
         return totalSalary;
+
     }
 }
