@@ -15,19 +15,22 @@ public class Main {
             System.out.println("  Complement: " + Workerlist[i].WorkerComplement);
         }
 
-        double totalSalary = CalculateSalary(Workerlist);
-        System.out.println("Total Salary: " + totalSalary);
+        CalculateSalary(Workerlist);
     }
 
-    public static double CalculateSalary(Worker[] Workerlist) {
-        double totalSalary = 0;
+    public static void CalculateSalary(Worker[] Workerlist) {
+        double TotalSalary = 0;
+        double SalaryInclTax = 0;
+        double TaxFactor = 1.5;
         for (int i = 0; i < Workerlist.length; i++) {
             if (Workerlist[i] == null) {
-                return totalSalary;
+                break;
             }
-            totalSalary = totalSalary + Workerlist[i].WorkerSalary;
+            TotalSalary = TotalSalary + Workerlist[i].WorkerSalary;
+            SalaryInclTax = TotalSalary * TaxFactor;
         }
-        return totalSalary;
 
+        System.out.println("Total Salary: " + TotalSalary);
+        System.out.println("Total Salary icluding Tax: " + SalaryInclTax);
     }
 }
