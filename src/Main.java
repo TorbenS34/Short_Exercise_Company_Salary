@@ -3,11 +3,7 @@ public class Main {
         Worker[] Workerlist = new Worker[100];
 
         for (int i = 0; i < 10; i++) {
-            Workerlist[i] = new Worker();
-            Workerlist[i].Workername = "Worker" + i;
-            Workerlist[i].WorkerComplement = i;
-            Workerlist[i].WorkerSalary = i*i;
-
+            Workerlist[i] = new Worker("Worker" + i, i*i, i);
         }
 
         for (int i = 0; i < Workerlist.length; i++) {
