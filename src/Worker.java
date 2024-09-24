@@ -1,6 +1,6 @@
 public class Worker{
     public String Workername;
-    public int WorkerSalary;
-    public int WorkerComplement;
+    public double WorkerSalary;
+    public double WorkerComplement;
 
 }
